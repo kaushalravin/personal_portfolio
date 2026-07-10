@@ -5,7 +5,7 @@ const LaptopScene = lazy(() => import('./three/LaptopScene'));
 
 /* ─── Typing roles ───────────────────────────────────────────────── */
 const ROLES = [
-  '2nd Year CS Student',
+  '3rd Year CS Student',
   'Aspiring Software Engineer',
   'Open to Internships',
   'Building Real Projects',
@@ -13,9 +13,9 @@ const ROLES = [
 ];
 
 function TypedRole() {
-  const [idx,       setIdx]       = useState(0);
+  const [idx, setIdx] = useState(0);
   const [displayed, setDisplayed] = useState('');
-  const [deleting,  setDeleting]  = useState(false);
+  const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
     const current = ROLES[idx];
@@ -56,27 +56,27 @@ function TypedRole() {
 
 /* ─── Framer-Motion variants ─────────────────────────────────────── */
 const container = {
-  hidden:   {},
-  visible:  { transition: { staggerChildren: 0.11, delayChildren: 0.2 } },
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.11, delayChildren: 0.2 } },
 };
 const fadeUp = {
-  hidden:  { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0,  transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
 };
 const fadeIn = {
-  hidden:  { opacity: 0 },
+  hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 0.9 } },
 };
 
 /* ─── Static star dots behind text (CSS) ────────────────────────── */
 function StarField() {
   const stars = Array.from({ length: 38 }, (_, i) => ({
-    id:   i,
-    top:  `${Math.random() * 100}%`,
+    id: i,
+    top: `${Math.random() * 100}%`,
     left: `${Math.random() * 52}%`,
     size: Math.random() < 0.25 ? 2 : 1,
-    op:   0.12 + Math.random() * 0.22,
-    dur:  2.4 + Math.random() * 3,
+    op: 0.12 + Math.random() * 0.22,
+    dur: 2.4 + Math.random() * 3,
   }));
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
@@ -88,7 +88,7 @@ function StarField() {
           style={{
             position: 'absolute',
             top: s.top, left: s.left,
-            width:  s.size, height: s.size,
+            width: s.size, height: s.size,
             borderRadius: '50%',
             background: '#818cf8',
           }}

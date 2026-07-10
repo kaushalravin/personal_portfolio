@@ -187,7 +187,7 @@ const PROJECTS = [
   },
   {
     name: 'IRR Calculator',
-    title: 'Financial Analysis Tool',
+    title: 'IRR Calculator',
     desc: 'A browser-based Internal Rate of Return (IRR) calculator built with vanilla JavaScript that computes investment returns using Binary Search and Net Present Value (NPV). It features dynamic cash-flow generation and intelligent pre-population of repeated values.',
     longDesc: [
       'Binary Search with NPV calculations to accurately compute the IRR.',
@@ -450,14 +450,7 @@ function ProjectRow({ project, index, onOpenDetail }) {
           />
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0f]/70 to-transparent lg:hidden" />
 
-          <div
-            className={`absolute hidden sm:block ${isEven ? 'right-0' : 'left-0'} top-1/2 -translate-y-1/2 w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56`}
-            style={{ zIndex: 2 }}
-          >
-            <Suspense fallback={null}>
-              <ProjectOrb accent={accent} />
-            </Suspense>
-          </div>
+
 
           <div className="absolute bottom-4 left-5 z-10">
             <span

@@ -10,7 +10,6 @@ const NAV_LINKS = [
   { label: 'Skills',       to: 'skills'       },
   { label: 'Education',    to: 'about'        },
   { label: 'Achievements', to: 'achievements' },
-  { label: 'Contact',      to: 'contact'      },
 ];
 
 /* ─── Framer-Motion variants ─────────────────────────────────── */
