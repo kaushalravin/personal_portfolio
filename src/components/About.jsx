@@ -8,7 +8,7 @@ const EDUCATION = [
     institution: 'Madras Institute of Technology',
     sub:         'Anna University',
     degree:      'B.E. Computer Science and Engineering',
-    score:       '9.80 / 10.0',
+    score:       '9.79 / 10.0',
     scoreLabel:  'CGPA',
     year:        'Expected 2028',
     location:    'Chennai, India',

@@ -7,9 +7,21 @@ const OrbitalRings = lazy(() => import('./three/OrbitalRings'));
 const ACHIEVEMENTS = [
   {
     icon: '⌗',
-    title: 'LeetCode — 200+ Problems',
-    desc: 'Completed 200+ problems focusing on Data Structures and Algorithms.',
+    title: 'LeetCode — 380+ Problems',
+    desc: 'Completed 380+ problems focusing on Data Structures and Algorithms.',
     tag: 'DSA',
+  },
+  {
+    icon: '🏆',
+    title: 'Symposium Double Win',
+    desc: 'Won 1st place in "Witchcraft of Queries" (SQL query/DB challenge) and 2nd place in "Savage Coding" at an intercollege symposium.',
+    tag: 'Competition',
+  },
+  {
+    icon: '♟',
+    title: 'District Level Chess Player',
+    desc: 'Competed at the district level, demonstrating deep strategic analysis, focus, and positional foresight.',
+    tag: 'Sport',
   },
   {
     icon: '🏆',
@@ -28,6 +40,12 @@ const ACHIEVEMENTS = [
     title: 'Full-Stack Certifications',
     desc: 'Foundations of Full-Stack Web Development (HTML, CSS, React, Node.js) · Web Developer Bootcamp 2026 (Udemy).',
     tag: 'Certification',
+  },
+  {
+    icon: '⌨',
+    title: '105 WPM Touch Typist',
+    desc: 'High-speed touch typing capability averaging 105 WPM with high accuracy.',
+    tag: 'Skill',
   },
   {
     icon: '✦',
